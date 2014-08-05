@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84CBD5C71990B08400A23749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5C61990B08400A23749 /* Foundation.framework */; };
+		84CBD5C91990B08400A23749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5C81990B08400A23749 /* CoreGraphics.framework */; };
+		84CBD5CB1990B08400A23749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5CA1990B08400A23749 /* UIKit.framework */; };
+		84CBD5D11990B08400A23749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5CF1990B08400A23749 /* InfoPlist.strings */; };
+		84CBD5D31990B08400A23749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5D21990B08400A23749 /* main.m */; };
+		84CBD5D71990B08400A23749 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5D61990B08400A23749 /* MTAppDelegate.m */; };
+		84CBD5DA1990B08400A23749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5D81990B08400A23749 /* Main.storyboard */; };
+		84CBD5DD1990B08400A23749 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5DC1990B08400A23749 /* MTViewController.m */; };
+		84CBD5DF1990B08400A23749 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5DE1990B08400A23749 /* Images.xcassets */; };
+		84CBD5E61990B08400A23749 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5E51990B08400A23749 /* XCTest.framework */; };
+		84CBD5E71990B08400A23749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5C61990B08400A23749 /* Foundation.framework */; };
+		84CBD5E81990B08400A23749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5CA1990B08400A23749 /* UIKit.framework */; };
+		84CBD5F01990B08400A23749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5EE1990B08400A23749 /* InfoPlist.strings */; };
+		84CBD5F21990B08400A23749 /* musictankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5F11990B08400A23749 /* musictankTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CBD5E91990B08400A23749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CBD5BB1990B08400A23749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CBD5C21990B08400A23749;
+			remoteInfo = musictank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84CBD5C31990B08400A23749 /* musictank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musictank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CBD5C61990B08400A23749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84CBD5C81990B08400A23749 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84CBD5CA1990B08400A23749 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84CBD5CE1990B08400A23749 /* musictank-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "musictank-Info.plist"; sourceTree = "<group>"; };
+		84CBD5D01990B08400A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84CBD5D21990B08400A23749 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CBD5D41990B08400A23749 /* musictank-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "musictank-Prefix.pch"; sourceTree = "<group>"; };
+		84CBD5D51990B08400A23749 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		84CBD5D61990B08400A23749 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		84CBD5D91990B08400A23749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CBD5DB1990B08400A23749 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		84CBD5DC1990B08400A23749 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
+		84CBD5DE1990B08400A23749 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84CBD5E41990B08400A23749 /* musictankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musictankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CBD5E51990B08400A23749 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84CBD5ED1990B08400A23749 /* musictankTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "musictankTests-Info.plist"; sourceTree = "<group>"; };
+		84CBD5EF1990B08400A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84CBD5F11990B08400A23749 /* musictankTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = musictankTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CBD5C01990B08400A23749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBD5C91990B08400A23749 /* CoreGraphics.framework in Frameworks */,
+				84CBD5CB1990B08400A23749 /* UIKit.framework in Frameworks */,
+				84CBD5C71990B08400A23749 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CBD5E11990B08400A23749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBD5E61990B08400A23749 /* XCTest.framework in Frameworks */,
+				84CBD5E81990B08400A23749 /* UIKit.framework in Frameworks */,
+				84CBD5E71990B08400A23749 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84CBD5BA1990B08400A23749 = {
+			isa = PBXGroup;
+			children = (
+				84CBD5CC1990B08400A23749 /* musictank */,
+				84CBD5EB1990B08400A23749 /* musictankTests */,
+				84CBD5C51990B08400A23749 /* Frameworks */,
+				84CBD5C41990B08400A23749 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CBD5C41990B08400A23749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD5C31990B08400A23749 /* musictank.app */,
+				84CBD5E41990B08400A23749 /* musictankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CBD5C51990B08400A23749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD5C61990B08400A23749 /* Foundation.framework */,
+				84CBD5C81990B08400A23749 /* CoreGraphics.framework */,
+				84CBD5CA1990B08400A23749 /* UIKit.framework */,
+				84CBD5E51990B08400A23749 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CBD5CC1990B08400A23749 /* musictank */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD5D51990B08400A23749 /* MTAppDelegate.h */,
+				84CBD5D61990B08400A23749 /* MTAppDelegate.m */,
+				84CBD5D81990B08400A23749 /* Main.storyboard */,
+				84CBD5DB1990B08400A23749 /* MTViewController.h */,
+				84CBD5DC1990B08400A23749 /* MTViewController.m */,
+				84CBD5DE1990B08400A23749 /* Images.xcassets */,
+				84CBD5CD1990B08400A23749 /* Supporting Files */,
+			);
+			path = musictank;
+			sourceTree = "<group>";
+		};
+		84CBD5CD1990B08400A23749 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD5CE1990B08400A23749 /* musictank-Info.plist */,
+				84CBD5CF1990B08400A23749 /* InfoPlist.strings */,
+				84CBD5D21990B08400A23749 /* main.m */,
+				84CBD5D41990B08400A23749 /* musictank-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84CBD5EB1990B08400A23749 /* musictankTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD5F11990B08400A23749 /* musictankTests.m */,
+				84CBD5EC1990B08400A23749 /* Supporting Files */,
+			);
+			path = musictankTests;
+			sourceTree = "<group>";
+		};
+		84CBD5EC1990B08400A23749 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD5ED1990B08400A23749 /* musictankTests-Info.plist */,
+				84CBD5EE1990B08400A23749 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CBD5C21990B08400A23749 /* musictank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CBD5F51990B08400A23749 /* Build configuration list for PBXNativeTarget "musictank" */;
+			buildPhases = (
+				84CBD5BF1990B08400A23749 /* Sources */,
+				84CBD5C01990B08400A23749 /* Frameworks */,
+				84CBD5C11990B08400A23749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = musictank;
+			productName = musictank;
+			productReference = 84CBD5C31990B08400A23749 /* musictank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CBD5E31990B08400A23749 /* musictankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CBD5F81990B08400A23749 /* Build configuration list for PBXNativeTarget "musictankTests" */;
+			buildPhases = (
+				84CBD5E01990B08400A23749 /* Sources */,
+				84CBD5E11990B08400A23749 /* Frameworks */,
+				84CBD5E21990B08400A23749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CBD5EA1990B08400A23749 /* PBXTargetDependency */,
+			);
+			name = musictankTests;
+			productName = musictankTests;
+			productReference = 84CBD5E41990B08400A23749 /* musictankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CBD5BB1990B08400A23749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = fireup;
+				TargetAttributes = {
+					84CBD5E31990B08400A23749 = {
+						TestTargetID = 84CBD5C21990B08400A23749;
+					};
+				};
+			};
+			buildConfigurationList = 84CBD5BE1990B08400A23749 /* Build configuration list for PBXProject "musictank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CBD5BA1990B08400A23749;
+			productRefGroup = 84CBD5C41990B08400A23749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CBD5C21990B08400A23749 /* musictank */,
+				84CBD5E31990B08400A23749 /* musictankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CBD5C11990B08400A23749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBD5DF1990B08400A23749 /* Images.xcassets in Resources */,
+				84CBD5D11990B08400A23749 /* InfoPlist.strings in Resources */,
+				84CBD5DA1990B08400A23749 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CBD5E21990B08400A23749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBD5F01990B08400A23749 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CBD5BF1990B08400A23749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBD5D31990B08400A23749 /* main.m in Sources */,
+				84CBD5DD1990B08400A23749 /* MTViewController.m in Sources */,
+				84CBD5D71990B08400A23749 /* MTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CBD5E01990B08400A23749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBD5F21990B08400A23749 /* musictankTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CBD5EA1990B08400A23749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CBD5C21990B08400A23749 /* musictank */;
+			targetProxy = 84CBD5E91990B08400A23749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CBD5CF1990B08400A23749 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CBD5D01990B08400A23749 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84CBD5D81990B08400A23749 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CBD5D91990B08400A23749 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84CBD5EE1990B08400A23749 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CBD5EF1990B08400A23749 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CBD5F31990B08400A23749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84CBD5F41990B08400A23749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CBD5F61990B08400A23749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "musictank/musictank-Prefix.pch";
+				INFOPLIST_FILE = "musictank/musictank-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84CBD5F71990B08400A23749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "musictank/musictank-Prefix.pch";
+				INFOPLIST_FILE = "musictank/musictank-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84CBD5F91990B08400A23749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/musictank.app/musictank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "musictank/musictank-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "musictankTests/musictankTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84CBD5FA1990B08400A23749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/musictank.app/musictank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "musictank/musictank-Prefix.pch";
+				INFOPLIST_FILE = "musictankTests/musictankTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CBD5BE1990B08400A23749 /* Build configuration list for PBXProject "musictank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CBD5F31990B08400A23749 /* Debug */,
+				84CBD5F41990B08400A23749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CBD5F51990B08400A23749 /* Build configuration list for PBXNativeTarget "musictank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CBD5F61990B08400A23749 /* Debug */,
+				84CBD5F71990B08400A23749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84CBD5F81990B08400A23749 /* Build configuration list for PBXNativeTarget "musictankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CBD5F91990B08400A23749 /* Debug */,
+				84CBD5FA1990B08400A23749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CBD5BB1990B08400A23749 /* Project object */;
+}
