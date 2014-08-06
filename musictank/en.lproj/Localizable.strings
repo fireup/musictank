@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  
+
+  Created by ZBN on 14-8-6.
+
+*/
+
+CFBundleDisplayName = "Music Tank";
+"USERNAMEPLACEHOLDER" = "Username";
+"PASSWORDPLACEHOLDER" = "Password";

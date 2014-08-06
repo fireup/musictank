@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  
+
+  Created by ZBN on 14-8-6.
+
+*/
+CFBundleDisplayName = "音乐坦克";
+"USERNAMEPLACEHOLDER" = "用户账号";
+"PASSWORDPLACEHOLDER" = "密       码";

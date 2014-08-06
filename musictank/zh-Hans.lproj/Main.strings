@@ -1,0 +1,36 @@
+
+/* Class = "IBUILabel"; text = "客服热线"; ObjectID = "40T-bR-s70"; */
+"40T-bR-s70.text" = "客服热线";
+
+/* Class = "IBUIButton"; normalTitle = "注销"; ObjectID = "Cgg-DJ-tw2"; */
+"Cgg-DJ-tw2.normalTitle" = "注销";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "EBQ-sb-hho"; */
+"EBQ-sb-hho.normalTitle" = "登录";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "Q8X-36-qEZ"; */
+"Q8X-36-qEZ.normalTitle" = "注册";
+
+/* Class = "IBUILabel"; text = "最新动态"; ObjectID = "Vrl-Bj-s2n"; */
+"Vrl-Bj-s2n.text" = "最新动态";
+
+/* Class = "IBUITextField"; text = "密       码"; ObjectID = "Wtk-Wg-h1S"; */
+"Wtk-Wg-h1S.text" = "密       码";
+
+/* Class = "IBUILabel"; text = "版本更新"; ObjectID = "arO-xS-MXp"; */
+"arO-xS-MXp.text" = "版本更新";
+
+/* Class = "IBUILabel"; text = "最新作品"; ObjectID = "ibW-Ls-WwC"; */
+"ibW-Ls-WwC.text" = "最新作品";
+
+/* Class = "IBUITextField"; text = "用户账号"; ObjectID = "nHm-tg-Gbd"; */
+"nHm-tg-Gbd.text" = "用户账号";
+
+/* Class = "IBUILabel"; text = "VC B"; ObjectID = "r9C-JQ-hlh"; */
+"r9C-JQ-hlh.text" = "VC B";
+
+/* Class = "IBUIButton"; normalTitle = "登   录"; ObjectID = "uEQ-ge-gS2"; */
+"uEQ-ge-gS2.normalTitle" = "登   录";
+
+/* Class = "IBUILabel"; text = "VC A"; ObjectID = "yIA-s4-DGw"; */
+"yIA-s4-DGw.text" = "VC A";

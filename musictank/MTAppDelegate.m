@@ -13,6 +13,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
+    UINavigationController *leftNavi = [st instantiateViewControllerWithIdentifier:@"LeftNavi"];
+    UINavigationController *centerVC = [st instantiateViewControllerWithIdentifier:@"CenterNavi"];
+    MMDrawerController *drawerVC = [[MMDrawerController alloc] initWithCenterViewController:centerVC leftDrawerViewController:leftNavi];
+    
+    drawerVC.shouldStretchDrawer = NO;
+    drawerVC.maximumLeftDrawerWidth = 230;
+    drawerVC.showsShadow = NO;
+    [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    self.window.rootViewController = drawerVC;
+    [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+
+
+    
     return YES;
 }
 							
