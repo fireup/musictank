@@ -14,13 +14,20 @@
 		84CBD5D31990B08400A23749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5D21990B08400A23749 /* main.m */; };
 		84CBD5D71990B08400A23749 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5D61990B08400A23749 /* MTAppDelegate.m */; };
 		84CBD5DA1990B08400A23749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5D81990B08400A23749 /* Main.storyboard */; };
-		84CBD5DD1990B08400A23749 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5DC1990B08400A23749 /* MTViewController.m */; };
 		84CBD5DF1990B08400A23749 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5DE1990B08400A23749 /* Images.xcassets */; };
 		84CBD5E61990B08400A23749 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5E51990B08400A23749 /* XCTest.framework */; };
 		84CBD5E71990B08400A23749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5C61990B08400A23749 /* Foundation.framework */; };
 		84CBD5E81990B08400A23749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBD5CA1990B08400A23749 /* UIKit.framework */; };
 		84CBD5F01990B08400A23749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD5EE1990B08400A23749 /* InfoPlist.strings */; };
 		84CBD5F21990B08400A23749 /* musictankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5F11990B08400A23749 /* musictankTests.m */; };
+		84CBD5FD1990C83400A23749 /* MTLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5FC1990C83400A23749 /* MTLeftViewController.m */; };
+		84CBD6061990FCA000A23749 /* MTDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6051990FCA000A23749 /* MTDataHandler.m */; };
+		84CBD60A199105C500A23749 /* MTImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD609199105C500A23749 /* MTImageHandler.m */; };
+		84CBD60D199114C200A23749 /* MTSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD60C199114C200A23749 /* MTSong.m */; };
+		84CBD610199117F000A23749 /* MTArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD60F199117F000A23749 /* MTArtist.m */; };
+		84CBD6131991CADD00A23749 /* MTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6121991CADD00A23749 /* MTLoginViewController.m */; };
+		84CBD61A1991E48F00A23749 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD61C1991E48F00A23749 /* Localizable.strings */; };
+		D5325BD9F1C7447B86497FA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6442DE8BA944680A18BED6F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		462BA77ECA214C508F9C9E8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		84CBD5C31990B08400A23749 /* musictank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musictank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CBD5C61990B08400A23749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84CBD5C81990B08400A23749 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +53,32 @@
 		84CBD5D51990B08400A23749 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
 		84CBD5D61990B08400A23749 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
 		84CBD5D91990B08400A23749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84CBD5DB1990B08400A23749 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
-		84CBD5DC1990B08400A23749 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
 		84CBD5DE1990B08400A23749 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84CBD5E41990B08400A23749 /* musictankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musictankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CBD5E51990B08400A23749 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		84CBD5ED1990B08400A23749 /* musictankTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "musictankTests-Info.plist"; sourceTree = "<group>"; };
 		84CBD5EF1990B08400A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84CBD5F11990B08400A23749 /* musictankTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = musictankTests.m; sourceTree = "<group>"; };
+		84CBD5FB1990C83400A23749 /* MTLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLeftViewController.h; sourceTree = "<group>"; };
+		84CBD5FC1990C83400A23749 /* MTLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLeftViewController.m; sourceTree = "<group>"; };
+		84CBD6041990FCA000A23749 /* MTDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDataHandler.h; sourceTree = "<group>"; };
+		84CBD6051990FCA000A23749 /* MTDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDataHandler.m; sourceTree = "<group>"; };
+		84CBD608199105C500A23749 /* MTImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageHandler.h; sourceTree = "<group>"; };
+		84CBD609199105C500A23749 /* MTImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageHandler.m; sourceTree = "<group>"; };
+		84CBD60B199114C200A23749 /* MTSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSong.h; sourceTree = "<group>"; };
+		84CBD60C199114C200A23749 /* MTSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSong.m; sourceTree = "<group>"; };
+		84CBD60E199117F000A23749 /* MTArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtist.h; sourceTree = "<group>"; };
+		84CBD60F199117F000A23749 /* MTArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtist.m; sourceTree = "<group>"; };
+		84CBD6111991CADD00A23749 /* MTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLoginViewController.h; sourceTree = "<group>"; };
+		84CBD6121991CADD00A23749 /* MTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLoginViewController.m; sourceTree = "<group>"; };
+		84CBD6141991DFB800A23749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84CBD6151991E11100A23749 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		84CBD6161991E11100A23749 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		84CBD6171991E11100A23749 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		84CBD61B1991E48F00A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84CBD61D1991E49800A23749 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		84CBD61F1991E65D00A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C6442DE8BA944680A18BED6F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +89,7 @@
 				84CBD5C91990B08400A23749 /* CoreGraphics.framework in Frameworks */,
 				84CBD5CB1990B08400A23749 /* UIKit.framework in Frameworks */,
 				84CBD5C71990B08400A23749 /* Foundation.framework in Frameworks */,
+				D5325BD9F1C7447B86497FA9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +113,7 @@
 				84CBD5EB1990B08400A23749 /* musictankTests */,
 				84CBD5C51990B08400A23749 /* Frameworks */,
 				84CBD5C41990B08400A23749 /* Products */,
+				462BA77ECA214C508F9C9E8D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +133,7 @@
 				84CBD5C81990B08400A23749 /* CoreGraphics.framework */,
 				84CBD5CA1990B08400A23749 /* UIKit.framework */,
 				84CBD5E51990B08400A23749 /* XCTest.framework */,
+				C6442DE8BA944680A18BED6F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,9 +144,12 @@
 				84CBD5D51990B08400A23749 /* MTAppDelegate.h */,
 				84CBD5D61990B08400A23749 /* MTAppDelegate.m */,
 				84CBD5D81990B08400A23749 /* Main.storyboard */,
-				84CBD5DB1990B08400A23749 /* MTViewController.h */,
-				84CBD5DC1990B08400A23749 /* MTViewController.m */,
-				84CBD5DE1990B08400A23749 /* Images.xcassets */,
+				84CBD5FB1990C83400A23749 /* MTLeftViewController.h */,
+				84CBD5FC1990C83400A23749 /* MTLeftViewController.m */,
+				84CBD6111991CADD00A23749 /* MTLoginViewController.h */,
+				84CBD6121991CADD00A23749 /* MTLoginViewController.m */,
+				84CBD6071990FCA600A23749 /* Model */,
+				84CBD6031990F72800A23749 /* View */,
 				84CBD5CD1990B08400A23749 /* Supporting Files */,
 			);
 			path = musictank;
@@ -126,8 +158,10 @@
 		84CBD5CD1990B08400A23749 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84CBD5DE1990B08400A23749 /* Images.xcassets */,
 				84CBD5CE1990B08400A23749 /* musictank-Info.plist */,
 				84CBD5CF1990B08400A23749 /* InfoPlist.strings */,
+				84CBD61C1991E48F00A23749 /* Localizable.strings */,
 				84CBD5D21990B08400A23749 /* main.m */,
 				84CBD5D41990B08400A23749 /* musictank-Prefix.pch */,
 			);
@@ -152,6 +186,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84CBD6031990F72800A23749 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84CBD6071990FCA600A23749 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84CBD60E199117F000A23749 /* MTArtist.h */,
+				84CBD60F199117F000A23749 /* MTArtist.m */,
+				84CBD60B199114C200A23749 /* MTSong.h */,
+				84CBD60C199114C200A23749 /* MTSong.m */,
+				84CBD6041990FCA000A23749 /* MTDataHandler.h */,
+				84CBD6051990FCA000A23749 /* MTDataHandler.m */,
+				84CBD608199105C500A23749 /* MTImageHandler.h */,
+				84CBD609199105C500A23749 /* MTImageHandler.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84CBD5F51990B08400A23749 /* Build configuration list for PBXNativeTarget "musictank" */;
 			buildPhases = (
+				24446C261648461B87B2E342 /* Check Pods Manifest.lock */,
 				84CBD5BF1990B08400A23749 /* Sources */,
 				84CBD5C01990B08400A23749 /* Frameworks */,
 				84CBD5C11990B08400A23749 /* Resources */,
+				D7C53BC38D104B45B324F303 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +270,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 84CBD5BA1990B08400A23749;
 			productRefGroup = 84CBD5C41990B08400A23749 /* Products */;
@@ -230,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CBD5DF1990B08400A23749 /* Images.xcassets in Resources */,
+				84CBD61A1991E48F00A23749 /* Localizable.strings in Resources */,
 				84CBD5D11990B08400A23749 /* InfoPlist.strings in Resources */,
 				84CBD5DA1990B08400A23749 /* Main.storyboard in Resources */,
 			);
@@ -245,14 +305,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24446C261648461B87B2E342 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C53BC38D104B45B324F303 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84CBD5BF1990B08400A23749 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CBD60D199114C200A23749 /* MTSong.m in Sources */,
 				84CBD5D31990B08400A23749 /* main.m in Sources */,
-				84CBD5DD1990B08400A23749 /* MTViewController.m in Sources */,
 				84CBD5D71990B08400A23749 /* MTAppDelegate.m in Sources */,
+				84CBD6131991CADD00A23749 /* MTLoginViewController.m in Sources */,
+				84CBD5FD1990C83400A23749 /* MTLeftViewController.m in Sources */,
+				84CBD60A199105C500A23749 /* MTImageHandler.m in Sources */,
+				84CBD610199117F000A23749 /* MTArtist.m in Sources */,
+				84CBD6061990FCA000A23749 /* MTDataHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +377,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				84CBD5D01990B08400A23749 /* en */,
+				84CBD6141991DFB800A23749 /* Base */,
+				84CBD6161991E11100A23749 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -287,6 +387,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				84CBD5D91990B08400A23749 /* Base */,
+				84CBD6151991E11100A23749 /* zh-Hans */,
+				84CBD61F1991E65D00A23749 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -295,8 +397,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				84CBD5EF1990B08400A23749 /* en */,
+				84CBD6171991E11100A23749 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84CBD61C1991E48F00A23749 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CBD61B1991E48F00A23749 /* en */,
+				84CBD61D1991E49800A23749 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -374,6 +486,7 @@
 		};
 		84CBD5F61990B08400A23749 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462BA77ECA214C508F9C9E8D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +500,7 @@
 		};
 		84CBD5F71990B08400A23749 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462BA77ECA214C508F9C9E8D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +571,7 @@
 				84CBD5F71990B08400A23749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84CBD5F81990B08400A23749 /* Build configuration list for PBXNativeTarget "musictankTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +580,7 @@
 				84CBD5FA1990B08400A23749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
