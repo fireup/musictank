@@ -7,8 +7,8 @@
 //
 
 #import "MTLatestWorksVC.h"
-
-static const int pageSize = 10;
+//override to set the pagesize needed.
+static const int pageSize = 5;
 
 @interface MTLatestWorksVC ()
 

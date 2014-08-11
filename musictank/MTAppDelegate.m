@@ -19,9 +19,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
-    UINavigationController *leftNavi = [st instantiateViewControllerWithIdentifier:@"LeftNavi"];
-    UINavigationController *centerVC = [st instantiateViewControllerWithIdentifier:@"CenterNavi"];
-    MMDrawerController *drawerVC = [[MMDrawerController alloc] initWithCenterViewController:centerVC leftDrawerViewController:leftNavi];
+    UINavigationController *leftDrawer = [st instantiateViewControllerWithIdentifier:@"LeftNavi"];
+    UINavigationController *centerDrawer = [st instantiateViewControllerWithIdentifier:@"CenterNavi"];
+    MMDrawerController *drawerVC = [[MMDrawerController alloc] initWithCenterViewController:centerDrawer leftDrawerViewController:leftDrawer];
     
     drawerVC.shouldStretchDrawer = NO;
     drawerVC.maximumLeftDrawerWidth = 230;
@@ -34,18 +34,22 @@
     [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
-    if (![MTDataHandler sharedData].isLogin) {
-        UINavigationController *leftNavi = (UINavigationController *)drawerVC.leftDrawerViewController;
-        if ([leftNavi.topViewController isKindOfClass:[MTLeftViewController class]]) {
-            MTLeftViewController *lvc = (MTLeftViewController *)leftNavi.topViewController;
-            [lvc performSelector:@selector(openLoginVC)];
-        }
-    } else {
+    MTLeftViewController *lvc = (MTLeftViewController *)leftDrawer.topViewController;
+    [lvc.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
+//    [lvc performSelector:@selector(selectRowAtIndexPath:animated:scrollPosition:) withObject:[NSIndexPath indexPathForRow:0 inSection:0] withObject:nil];
+//    [lvc tapLoginCell];
+//    if (![MTDataHandler sharedData].isLogin) {
+//        UINavigationController *leftNavi = (UINavigationController *)drawerVC.leftDrawerViewController;
+//        if ([leftNavi.topViewController isKindOfClass:[MTLeftViewController class]]) {
+//            MTLeftViewController *lvc = (MTLeftViewController *)leftNavi.topViewController;
+//            [lvc performSelector:@selector(openLoginVCWithIndexPath:) withObject:[NSIndexPath indexPathForRow:0 inSection:0]];
+//        }
+//    } else {
 //        if ([centerVC.topViewController isKindOfClass:[MTArtistHomeViewController class]]) {
 //            MTArtistHomeViewController *homeVC = (MTArtistHomeViewController *)(centerVC.topViewController);
 //            homeVC.artistID = [MTDataHandler sharedData].myArtistID;
-//        }
-    }
+////        }
+//    }
     
     self.window.rootViewController = drawerVC;
     [self.window makeKeyAndVisible];

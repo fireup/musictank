@@ -16,6 +16,11 @@
 
 @implementation MTLoginViewController
 
+- (IBAction)cancelButtonTapped:(UIBarButtonItem *)sender
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:self.cancelBlock];
+}
+
 - (IBAction)loginButtonTapped:(UIButton *)sender
 {
 //    NSString *username = self.username.text;

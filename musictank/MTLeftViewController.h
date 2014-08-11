@@ -17,7 +17,5 @@
 
 @interface MTLeftViewController : UITableViewController <MTArtistImageDelegate>
 
-- (IBAction)loginButtonTapped:(UIButton *)sender;
-- (void)openLoginVC;
 
 @end

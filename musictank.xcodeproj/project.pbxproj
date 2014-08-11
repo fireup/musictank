@@ -52,6 +52,8 @@
 		84DD83391995AE0500E1E4D6 /* MTNewsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83381995AE0500E1E4D6 /* MTNewsDetailVC.m */; };
 		84DD833C1995CA8400E1E4D6 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD833B1995CA8400E1E4D6 /* KxMenu.m */; };
 		84DD833F1995CBBE00E1E4D6 /* MTTopListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD833E1995CBBE00E1E4D6 /* MTTopListVC.m */; };
+		84DD834519986BE000E1E4D6 /* MTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD834419986BE000E1E4D6 /* MTTableViewController.m */; };
+		84DD834E1998DD1900E1E4D6 /* MTLatestSongVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD834D1998DD1900E1E4D6 /* MTLatestSongVC.m */; };
 		D5325BD9F1C7447B86497FA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6442DE8BA944680A18BED6F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,10 @@
 		84DD833B1995CA8400E1E4D6 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
 		84DD833D1995CBBE00E1E4D6 /* MTTopListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTopListVC.h; sourceTree = "<group>"; };
 		84DD833E1995CBBE00E1E4D6 /* MTTopListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTopListVC.m; sourceTree = "<group>"; };
+		84DD834319986BE000E1E4D6 /* MTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTableViewController.h; sourceTree = "<group>"; };
+		84DD834419986BE000E1E4D6 /* MTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTableViewController.m; sourceTree = "<group>"; };
+		84DD834C1998DD1900E1E4D6 /* MTLatestSongVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestSongVC.h; sourceTree = "<group>"; };
+		84DD834D1998DD1900E1E4D6 /* MTLatestSongVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestSongVC.m; sourceTree = "<group>"; };
 		C6442DE8BA944680A18BED6F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -213,8 +219,12 @@
 				84CBD5D51990B08400A23749 /* MTAppDelegate.h */,
 				84CBD5D61990B08400A23749 /* MTAppDelegate.m */,
 				84CBD5D81990B08400A23749 /* Main.storyboard */,
+				84DD834319986BE000E1E4D6 /* MTTableViewController.h */,
+				84DD834419986BE000E1E4D6 /* MTTableViewController.m */,
 				84CBD5FB1990C83400A23749 /* MTLeftViewController.h */,
 				84CBD5FC1990C83400A23749 /* MTLeftViewController.m */,
+				84DD834C1998DD1900E1E4D6 /* MTLatestSongVC.h */,
+				84DD834D1998DD1900E1E4D6 /* MTLatestSongVC.m */,
 				84DD83181994804500E1E4D6 /* MTLatestSongsVC.h */,
 				84DD83191994804500E1E4D6 /* MTLatestSongsVC.m */,
 				84DD8308199441CF00E1E4D6 /* MTLatestWorksVC.h */,
@@ -464,6 +474,7 @@
 			files = (
 				84DD83071993A89A00E1E4D6 /* MTSongPlayViewController.m in Sources */,
 				84DD83231994B84B00E1E4D6 /* MTArtistsIntroVC.m in Sources */,
+				84DD834519986BE000E1E4D6 /* MTTableViewController.m in Sources */,
 				84DD833F1995CBBE00E1E4D6 /* MTTopListVC.m in Sources */,
 				84CBD6301993275000A23749 /* MTWork.m in Sources */,
 				84DD832A1994B93E00E1E4D6 /* MTArtistsIntroCell.m in Sources */,
@@ -486,6 +497,7 @@
 				84DD831319944A0B00E1E4D6 /* MTLatestSongsCell.m in Sources */,
 				84DD831A1994804500E1E4D6 /* MTLatestSongsVC.m in Sources */,
 				84CBD628199249B200A23749 /* ASScroll.m in Sources */,
+				84DD834E1998DD1900E1E4D6 /* MTLatestSongVC.m in Sources */,
 				84CBD6061990FCA000A23749 /* MTDataHandler.m in Sources */,
 				84DD832E1994EE2500E1E4D6 /* MTWorkShowVC.m in Sources */,
 				84DD833C1995CA8400E1E4D6 /* KxMenu.m in Sources */,

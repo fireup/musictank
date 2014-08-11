@@ -22,14 +22,34 @@
 
 @implementation MTLeftViewController
 
-- (void)openLoginVC
+//在center内容区打开登录界面，成功后可返回left菜单区并重新点击cell
+- (void)openLoginVCWithIndexPath:(NSIndexPath *)indexPath
 {
-    [self centerAreaChangeVCWithSegue:@"SegueToLoginVC"];
+    NSLog(@"%@:", NSStringFromSelector(_cmd) );
+    UINavigationController *loginNavi = (UINavigationController *)[self.storyboard instantiateViewControllerWithIdentifier:@"LoginNavi"];
+    MTLoginViewController *loginVC = [loginNavi.viewControllers objectAtIndex:0];
+    loginVC.cancelBlock = ^{};
+    loginVC.successBlock = ^{
+        [self.tableView reloadData];
+        [self.tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+    };
+    [self.mm_drawerController presentViewController:loginNavi animated:YES completion:nil];
+}
+
+//改变center内容区的vc，输入VC identifier。
+- (void)centerChangeVCWithIdentifier:(NSString *)identifier
+{
+    UINavigationController *centerNavi = (UINavigationController *)self.mm_drawerController.centerViewController;
+    UIViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+
+    [centerNavi popToRootViewControllerAnimated:NO];
+    [centerNavi setViewControllers:@[newVC] animated:NO];
+    [self.mm_drawerController setCenterViewController:centerNavi withFullCloseAnimation:YES completion:nil];
 }
 
 - (IBAction)loginButtonTapped:(UIButton *)sender
 {
-    [self openLoginVC];
+    [self openLoginVCWithIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }
 
 - (IBAction)logoutButtonTapped:(UIButton *)sender
@@ -61,49 +81,82 @@
     
 }
 
-- (void)centerAreaChangeVCWithSegue:(NSString *)segueIdentifier
-{
-    UINavigationController *centerNavi = (UINavigationController *)self.mm_drawerController.centerViewController;
-    if (![centerNavi.topViewController isKindOfClass:[MTLatestSongsVC class]]) {
-        [centerNavi popToRootViewControllerAnimated:YES];
-    }
-    MTLatestSongsVC *lsvc = centerNavi.viewControllers[0];
 
-    [self.mm_drawerController setCenterViewController:centerNavi withFullCloseAnimation:YES completion:^(BOOL finished) {
-        [lsvc performSegueWithIdentifier:segueIdentifier sender:lsvc];
-    }];
-}
+//- (void)centerAreaChangeVCWithSegue:(NSString *)identifier
+//{
+//    UINavigationController *centerNavi = (UINavigationController *)self.mm_drawerController.centerViewController;
+//    
+//    
+//    
+//    
+//    if (![centerNavi.topViewController isKindOfClass:[MTLatestSongsVC class]]) {
+//        [centerNavi popToRootViewControllerAnimated:YES];
+//    }
+//    MTLatestSongsVC *lsvc = centerNavi.viewControllers[0];
+//
+//    [self.mm_drawerController setCenterViewController:centerNavi withFullCloseAnimation:YES completion:^(BOOL finished) {
+//        [lsvc performSegueWithIdentifier:segueIdentifier sender:lsvc];
+//    }];
+//}
 
 #pragma mark - Table view Delegate
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSIndexPath *path;
-    
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    NSString *identifier = cell.reuseIdentifier;
-    NSString *segueIdentifier;
-    
-    if ([identifier isEqualToString:@"LoginCell"]) {
-        if (![MTDataHandler sharedData].isLogin) { return nil; }
-        segueIdentifier = @"SegueToArtistHome";
-        
-    } else if ([identifier isEqualToString:@"LatestWorksCell"]) {
-        segueIdentifier = @"SegueToLastestWorksVC";
-        
-    } else if ([identifier isEqualToString:@"ArtistsIntroCell"]) {
-        segueIdentifier = @"SegueToArtistsIntroVC";
-        
-    } else if ([identifier isEqualToString:@"LatestNewsCell"]) {
-        segueIdentifier = @"SegueToLatestNewsVC";
-    
-    } else if ([identifier isEqualToString:@"TopListCell"]) {
-        segueIdentifier = @"SegueToTopListVC";
+    NSLog(@"%@: %@", NSStringFromSelector(_cmd), indexPath);
+    NSString *VCIdentifier;
+    switch (indexPath.row) {
+        case 0:
+            if (![MTDataHandler sharedData].isLogin) {
+                [self openLoginVCWithIndexPath:indexPath];
+                return nil;
+            } else {
+                VCIdentifier = @"ArtistHomeVC";
+            }
+            break;
+        case 1:
+            if (![MTDataHandler sharedData].isLogin) {
+                [self openLoginVCWithIndexPath:indexPath];
+                return nil;
+            } else {
+                VCIdentifier = @"ArtistListVC";
+            }
+            break;
+        case 2:
+            if (![MTDataHandler sharedData].isLogin) {
+                [self openLoginVCWithIndexPath:indexPath];
+                return nil;
+            } else {
+                VCIdentifier = @"WorkListVC";
+            }
+            break;
+        case 3:
+            if (![MTDataHandler sharedData].isLogin) {
+                [self openLoginVCWithIndexPath:indexPath];
+                return nil;
+            } else {
+                VCIdentifier = @"LatestWorkVC";
+            }
+            break;
+        case 4:
+            if (![MTDataHandler sharedData].isLogin) {
+                [self openLoginVCWithIndexPath:indexPath];
+                return nil;
+            } else {
+                VCIdentifier = @"LatestNewsVC";
+            }
+            break;
+        case 5:
+            VCIdentifier = @"AboutUsVC";
+            break;
+            
+        default:
+            break;
     }
     
-    [self centerAreaChangeVCWithSegue:segueIdentifier];
+    [self centerChangeVCWithIdentifier:VCIdentifier];
     
-    return path;
+    return nil;
 }
 
 #pragma mark - init
@@ -132,7 +185,7 @@
     
     [self.navigationController setNavigationBarHidden:YES];
     
-    [self reloadUserInfo];
+//    [self reloadUserInfo];
     
 }
 
