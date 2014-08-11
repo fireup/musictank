@@ -9,3 +9,13 @@
 CFBundleDisplayName = "Music Tank";
 "USERNAMEPLACEHOLDER" = "Username";
 "PASSWORDPLACEHOLDER" = "Password";
+"NETFAILALERTTITLE" = "Connection Lost";
+"NETFAILALERTMESSAGE" = "Please check your Internent connection";
+"ARTISTIDFAILALERTTITLE" = "Invalid artist ID, please login and try again";
+"ARTISTIDFAILALERTMESSAGE" = "Please retry later";
+"ALERTCANCELBUTTON" = "OK";
+"TOPSONGS" = "TOP LIST";
+"TOPSONGSBUTTON" = "Top Songs";
+"TOPWORKSBUTTON" = "Top Works";
+"POPULARMALEBUTTON" = "Popular Male Singers";
+"POPULARFEMALEBUTTON" = "Popular Female Singers";

@@ -15,9 +15,11 @@
 @interface MTImageHandler : NSObject
 
 + (UIImage *)getDefaultAvatarForFrame:(CGRect)frame;
-+ (UIImage *)getUserAvatarForFrame:(CGRect)frame;
+//+ (UIImage *)getUserAvatarForFrame:(CGRect)frame;
 
 + (UIImage *)getAvatarFromImage:(UIImage *)image forFrame:(CGRect)frame;
++ (UIImage *)resizeImageFromImage:(UIImage *)image forFrame:(CGRect)frame;
++ (instancetype)sharedHandler;
 
 - (void)downloadImageForURL:(NSString *)URLString;
 
@@ -28,6 +30,8 @@
 @protocol MTImageHandlerDelegate <NSObject>
 
 - (void)didDownloadImage:(UIImage *)image forURL:(NSString *)URLString;
+
+@optional
 - (void)didFailDownloadImageForURL:(NSString *)URLString;
 
 @end

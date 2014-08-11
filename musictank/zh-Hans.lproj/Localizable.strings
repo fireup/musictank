@@ -8,3 +8,14 @@
 CFBundleDisplayName = "音乐坦克";
 "USERNAMEPLACEHOLDER" = "用户账号";
 "PASSWORDPLACEHOLDER" = "密       码";
+"NETFAILALERTTITLE" = "连接失败";
+"NETFAILALERTMESSAGE" = "请检查互联网连接";
+"ARTISTIDFAILALERTTITLE" = "无效标识，请重新登录";
+"ARTISTIDFAILALERTMESSAGE" = "请稍后重试";
+"ALERTCANCELBUTTON" = "确定";
+
+"TOPSONGS" = "TOP排行榜";
+"TOPSONGSBUTTON" = "最受欢迎歌曲";
+"TOPWORKSBUTTON" = "最受欢迎曲谱";
+"POPULARMALEBUTTON" = "最受欢迎男歌手";
+"POPULARFEMALEBUTTON" = "最受欢迎女歌手";

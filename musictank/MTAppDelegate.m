@@ -7,6 +7,8 @@
 //
 
 #import "MTAppDelegate.h"
+#import "MTLeftViewController.h"
+#import "MTArtistHomeViewController.h"
 
 @implementation MTAppDelegate
 
@@ -24,17 +26,29 @@
     drawerVC.shouldStretchDrawer = NO;
     drawerVC.maximumLeftDrawerWidth = 230;
     drawerVC.showsShadow = NO;
-    [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    
-    self.window.rootViewController = drawerVC;
-    [self.window makeKeyAndVisible];
+    [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModePanningNavigationBar];
+    [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModePanningNavigationBar];
+
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-
-
+    
+    if (![MTDataHandler sharedData].isLogin) {
+        UINavigationController *leftNavi = (UINavigationController *)drawerVC.leftDrawerViewController;
+        if ([leftNavi.topViewController isKindOfClass:[MTLeftViewController class]]) {
+            MTLeftViewController *lvc = (MTLeftViewController *)leftNavi.topViewController;
+            [lvc performSelector:@selector(openLoginVC)];
+        }
+    } else {
+//        if ([centerVC.topViewController isKindOfClass:[MTArtistHomeViewController class]]) {
+//            MTArtistHomeViewController *homeVC = (MTArtistHomeViewController *)(centerVC.topViewController);
+//            homeVC.artistID = [MTDataHandler sharedData].myArtistID;
+//        }
+    }
+    
+    self.window.rootViewController = drawerVC;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

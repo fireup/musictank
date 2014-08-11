@@ -16,6 +16,39 @@
 
 @implementation MTLoginViewController
 
+- (IBAction)loginButtonTapped:(UIButton *)sender
+{
+//    NSString *username = self.username.text;
+//    NSString *password = self.password.text;
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+    
+    NSDictionary *para = @{@"mobile": @"13800138000",
+                           @"password" : @"password"};
+    
+    [manager POST:LOGINURL parameters:para success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        if ([responseObject[@"result"] isEqualToString:@"success"]) {
+            
+            [MTDataHandler sharedData].login = YES;
+            [MTDataHandler sharedData].sessionID = responseObject[@"session_id"];
+            [MTDataHandler sharedData].myArtistID = responseObject[@"artist_id"];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.presentingViewController dismissViewControllerAnimated:YES completion:self.successBlock];
+            });
+            
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+
+
+
+#pragma mark - init
 
 - (void)viewDidLoad
 {

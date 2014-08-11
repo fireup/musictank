@@ -23,10 +23,35 @@
 		84CBD5FD1990C83400A23749 /* MTLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD5FC1990C83400A23749 /* MTLeftViewController.m */; };
 		84CBD6061990FCA000A23749 /* MTDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6051990FCA000A23749 /* MTDataHandler.m */; };
 		84CBD60A199105C500A23749 /* MTImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD609199105C500A23749 /* MTImageHandler.m */; };
-		84CBD60D199114C200A23749 /* MTSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD60C199114C200A23749 /* MTSong.m */; };
 		84CBD610199117F000A23749 /* MTArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD60F199117F000A23749 /* MTArtist.m */; };
 		84CBD6131991CADD00A23749 /* MTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6121991CADD00A23749 /* MTLoginViewController.m */; };
 		84CBD61A1991E48F00A23749 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD61C1991E48F00A23749 /* Localizable.strings */; };
+		84CBD625199246B900A23749 /* MTArtistHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD624199246B900A23749 /* MTArtistHomeViewController.m */; };
+		84CBD628199249B200A23749 /* ASScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD627199249B200A23749 /* ASScroll.m */; };
+		84CBD62C19930B1500A23749 /* MTArtistWorkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD62A19930B1500A23749 /* MTArtistWorkTableViewCell.m */; };
+		84CBD62D19930B1500A23749 /* MTArtistWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD62B19930B1500A23749 /* MTArtistWorkTableViewCell.xib */; };
+		84CBD6301993275000A23749 /* MTWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD62F1993275000A23749 /* MTWork.m */; };
+		84CBD63319935E8F00A23749 /* MTSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD63219935E8F00A23749 /* MTSong.m */; };
+		84DD83031993818F00E1E4D6 /* MTArtistSongTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83011993818F00E1E4D6 /* MTArtistSongTableViewCell.m */; };
+		84DD83041993818F00E1E4D6 /* MTArtistSongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DD83021993818F00E1E4D6 /* MTArtistSongTableViewCell.xib */; };
+		84DD83071993A89A00E1E4D6 /* MTSongPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83061993A89A00E1E4D6 /* MTSongPlayViewController.m */; };
+		84DD830A199441CF00E1E4D6 /* MTLatestWorksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8309199441CF00E1E4D6 /* MTLatestWorksVC.m */; };
+		84DD830E1994444A00E1E4D6 /* MTLatestWorksCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD830C1994444A00E1E4D6 /* MTLatestWorksCell.m */; };
+		84DD830F1994444A00E1E4D6 /* MTLatestWorksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DD830D1994444A00E1E4D6 /* MTLatestWorksCell.xib */; };
+		84DD831319944A0B00E1E4D6 /* MTLatestSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD831119944A0B00E1E4D6 /* MTLatestSongsCell.m */; };
+		84DD831419944A0B00E1E4D6 /* MTLatestSongsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DD831219944A0B00E1E4D6 /* MTLatestSongsCell.xib */; };
+		84DD831A1994804500E1E4D6 /* MTLatestSongsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83191994804500E1E4D6 /* MTLatestSongsVC.m */; };
+		84DD831D1994979B00E1E4D6 /* MTCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD831C1994979B00E1E4D6 /* MTCustomSegue.m */; };
+		84DD83231994B84B00E1E4D6 /* MTArtistsIntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83221994B84B00E1E4D6 /* MTArtistsIntroVC.m */; };
+		84DD832A1994B93E00E1E4D6 /* MTArtistsIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83281994B93E00E1E4D6 /* MTArtistsIntroCell.m */; };
+		84DD832B1994B93E00E1E4D6 /* MTArtistsIntroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DD83291994B93E00E1E4D6 /* MTArtistsIntroCell.xib */; };
+		84DD832E1994EE2500E1E4D6 /* MTWorkShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD832D1994EE2500E1E4D6 /* MTWorkShowVC.m */; };
+		84DD83311995999400E1E4D6 /* MTLatestNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83301995999400E1E4D6 /* MTLatestNewsVC.m */; };
+		84DD833519959B9700E1E4D6 /* MTLatestNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD833319959B9700E1E4D6 /* MTLatestNewsCell.m */; };
+		84DD833619959B9700E1E4D6 /* MTLatestNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DD833419959B9700E1E4D6 /* MTLatestNewsCell.xib */; };
+		84DD83391995AE0500E1E4D6 /* MTNewsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD83381995AE0500E1E4D6 /* MTNewsDetailVC.m */; };
+		84DD833C1995CA8400E1E4D6 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD833B1995CA8400E1E4D6 /* KxMenu.m */; };
+		84DD833F1995CBBE00E1E4D6 /* MTTopListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD833E1995CBBE00E1E4D6 /* MTTopListVC.m */; };
 		D5325BD9F1C7447B86497FA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6442DE8BA944680A18BED6F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +90,6 @@
 		84CBD6051990FCA000A23749 /* MTDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDataHandler.m; sourceTree = "<group>"; };
 		84CBD608199105C500A23749 /* MTImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageHandler.h; sourceTree = "<group>"; };
 		84CBD609199105C500A23749 /* MTImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageHandler.m; sourceTree = "<group>"; };
-		84CBD60B199114C200A23749 /* MTSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSong.h; sourceTree = "<group>"; };
-		84CBD60C199114C200A23749 /* MTSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSong.m; sourceTree = "<group>"; };
 		84CBD60E199117F000A23749 /* MTArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtist.h; sourceTree = "<group>"; };
 		84CBD60F199117F000A23749 /* MTArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtist.m; sourceTree = "<group>"; };
 		84CBD6111991CADD00A23749 /* MTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLoginViewController.h; sourceTree = "<group>"; };
@@ -78,6 +101,52 @@
 		84CBD61B1991E48F00A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84CBD61D1991E49800A23749 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		84CBD61F1991E65D00A23749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		84CBD623199246B900A23749 /* MTArtistHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtistHomeViewController.h; sourceTree = "<group>"; };
+		84CBD624199246B900A23749 /* MTArtistHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtistHomeViewController.m; sourceTree = "<group>"; };
+		84CBD626199249B200A23749 /* ASScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASScroll.h; sourceTree = "<group>"; };
+		84CBD627199249B200A23749 /* ASScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASScroll.m; sourceTree = "<group>"; };
+		84CBD62919930B1500A23749 /* MTArtistWorkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtistWorkTableViewCell.h; sourceTree = "<group>"; };
+		84CBD62A19930B1500A23749 /* MTArtistWorkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtistWorkTableViewCell.m; sourceTree = "<group>"; };
+		84CBD62B19930B1500A23749 /* MTArtistWorkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTArtistWorkTableViewCell.xib; sourceTree = "<group>"; };
+		84CBD62E1993275000A23749 /* MTWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWork.h; sourceTree = "<group>"; };
+		84CBD62F1993275000A23749 /* MTWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWork.m; sourceTree = "<group>"; };
+		84CBD63119935E8F00A23749 /* MTSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSong.h; sourceTree = "<group>"; };
+		84CBD63219935E8F00A23749 /* MTSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSong.m; sourceTree = "<group>"; };
+		84DD83001993818F00E1E4D6 /* MTArtistSongTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtistSongTableViewCell.h; sourceTree = "<group>"; };
+		84DD83011993818F00E1E4D6 /* MTArtistSongTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtistSongTableViewCell.m; sourceTree = "<group>"; };
+		84DD83021993818F00E1E4D6 /* MTArtistSongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTArtistSongTableViewCell.xib; sourceTree = "<group>"; };
+		84DD83051993A89A00E1E4D6 /* MTSongPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSongPlayViewController.h; sourceTree = "<group>"; };
+		84DD83061993A89A00E1E4D6 /* MTSongPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSongPlayViewController.m; sourceTree = "<group>"; };
+		84DD8308199441CF00E1E4D6 /* MTLatestWorksVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestWorksVC.h; sourceTree = "<group>"; };
+		84DD8309199441CF00E1E4D6 /* MTLatestWorksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestWorksVC.m; sourceTree = "<group>"; };
+		84DD830B1994444A00E1E4D6 /* MTLatestWorksCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestWorksCell.h; sourceTree = "<group>"; };
+		84DD830C1994444A00E1E4D6 /* MTLatestWorksCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestWorksCell.m; sourceTree = "<group>"; };
+		84DD830D1994444A00E1E4D6 /* MTLatestWorksCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLatestWorksCell.xib; sourceTree = "<group>"; };
+		84DD831019944A0B00E1E4D6 /* MTLatestSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestSongsCell.h; sourceTree = "<group>"; };
+		84DD831119944A0B00E1E4D6 /* MTLatestSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestSongsCell.m; sourceTree = "<group>"; };
+		84DD831219944A0B00E1E4D6 /* MTLatestSongsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLatestSongsCell.xib; sourceTree = "<group>"; };
+		84DD83181994804500E1E4D6 /* MTLatestSongsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestSongsVC.h; sourceTree = "<group>"; };
+		84DD83191994804500E1E4D6 /* MTLatestSongsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestSongsVC.m; sourceTree = "<group>"; };
+		84DD831B1994979B00E1E4D6 /* MTCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCustomSegue.h; sourceTree = "<group>"; };
+		84DD831C1994979B00E1E4D6 /* MTCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCustomSegue.m; sourceTree = "<group>"; };
+		84DD83211994B84B00E1E4D6 /* MTArtistsIntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtistsIntroVC.h; sourceTree = "<group>"; };
+		84DD83221994B84B00E1E4D6 /* MTArtistsIntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtistsIntroVC.m; sourceTree = "<group>"; };
+		84DD83271994B93E00E1E4D6 /* MTArtistsIntroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTArtistsIntroCell.h; sourceTree = "<group>"; };
+		84DD83281994B93E00E1E4D6 /* MTArtistsIntroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTArtistsIntroCell.m; sourceTree = "<group>"; };
+		84DD83291994B93E00E1E4D6 /* MTArtistsIntroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTArtistsIntroCell.xib; sourceTree = "<group>"; };
+		84DD832C1994EE2500E1E4D6 /* MTWorkShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWorkShowVC.h; sourceTree = "<group>"; };
+		84DD832D1994EE2500E1E4D6 /* MTWorkShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWorkShowVC.m; sourceTree = "<group>"; };
+		84DD832F1995999400E1E4D6 /* MTLatestNewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestNewsVC.h; sourceTree = "<group>"; };
+		84DD83301995999400E1E4D6 /* MTLatestNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestNewsVC.m; sourceTree = "<group>"; };
+		84DD833219959B9700E1E4D6 /* MTLatestNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLatestNewsCell.h; sourceTree = "<group>"; };
+		84DD833319959B9700E1E4D6 /* MTLatestNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLatestNewsCell.m; sourceTree = "<group>"; };
+		84DD833419959B9700E1E4D6 /* MTLatestNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLatestNewsCell.xib; sourceTree = "<group>"; };
+		84DD83371995AE0500E1E4D6 /* MTNewsDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNewsDetailVC.h; sourceTree = "<group>"; };
+		84DD83381995AE0500E1E4D6 /* MTNewsDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNewsDetailVC.m; sourceTree = "<group>"; };
+		84DD833A1995CA8400E1E4D6 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		84DD833B1995CA8400E1E4D6 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		84DD833D1995CBBE00E1E4D6 /* MTTopListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTopListVC.h; sourceTree = "<group>"; };
+		84DD833E1995CBBE00E1E4D6 /* MTTopListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTopListVC.m; sourceTree = "<group>"; };
 		C6442DE8BA944680A18BED6F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +215,24 @@
 				84CBD5D81990B08400A23749 /* Main.storyboard */,
 				84CBD5FB1990C83400A23749 /* MTLeftViewController.h */,
 				84CBD5FC1990C83400A23749 /* MTLeftViewController.m */,
+				84DD83181994804500E1E4D6 /* MTLatestSongsVC.h */,
+				84DD83191994804500E1E4D6 /* MTLatestSongsVC.m */,
+				84DD8308199441CF00E1E4D6 /* MTLatestWorksVC.h */,
+				84DD8309199441CF00E1E4D6 /* MTLatestWorksVC.m */,
+				84DD832F1995999400E1E4D6 /* MTLatestNewsVC.h */,
+				84DD83301995999400E1E4D6 /* MTLatestNewsVC.m */,
+				84DD83211994B84B00E1E4D6 /* MTArtistsIntroVC.h */,
+				84DD83221994B84B00E1E4D6 /* MTArtistsIntroVC.m */,
+				84DD833D1995CBBE00E1E4D6 /* MTTopListVC.h */,
+				84DD833E1995CBBE00E1E4D6 /* MTTopListVC.m */,
+				84CBD623199246B900A23749 /* MTArtistHomeViewController.h */,
+				84CBD624199246B900A23749 /* MTArtistHomeViewController.m */,
+				84DD83051993A89A00E1E4D6 /* MTSongPlayViewController.h */,
+				84DD83061993A89A00E1E4D6 /* MTSongPlayViewController.m */,
+				84DD832C1994EE2500E1E4D6 /* MTWorkShowVC.h */,
+				84DD832D1994EE2500E1E4D6 /* MTWorkShowVC.m */,
+				84DD83371995AE0500E1E4D6 /* MTNewsDetailVC.h */,
+				84DD83381995AE0500E1E4D6 /* MTNewsDetailVC.m */,
 				84CBD6111991CADD00A23749 /* MTLoginViewController.h */,
 				84CBD6121991CADD00A23749 /* MTLoginViewController.m */,
 				84CBD6071990FCA600A23749 /* Model */,
@@ -189,6 +276,30 @@
 		84CBD6031990F72800A23749 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84CBD626199249B200A23749 /* ASScroll.h */,
+				84CBD627199249B200A23749 /* ASScroll.m */,
+				84DD833A1995CA8400E1E4D6 /* KxMenu.h */,
+				84DD833B1995CA8400E1E4D6 /* KxMenu.m */,
+				84DD831B1994979B00E1E4D6 /* MTCustomSegue.h */,
+				84DD831C1994979B00E1E4D6 /* MTCustomSegue.m */,
+				84CBD62919930B1500A23749 /* MTArtistWorkTableViewCell.h */,
+				84CBD62A19930B1500A23749 /* MTArtistWorkTableViewCell.m */,
+				84CBD62B19930B1500A23749 /* MTArtistWorkTableViewCell.xib */,
+				84DD83001993818F00E1E4D6 /* MTArtistSongTableViewCell.h */,
+				84DD83011993818F00E1E4D6 /* MTArtistSongTableViewCell.m */,
+				84DD83021993818F00E1E4D6 /* MTArtistSongTableViewCell.xib */,
+				84DD830B1994444A00E1E4D6 /* MTLatestWorksCell.h */,
+				84DD830C1994444A00E1E4D6 /* MTLatestWorksCell.m */,
+				84DD830D1994444A00E1E4D6 /* MTLatestWorksCell.xib */,
+				84DD831019944A0B00E1E4D6 /* MTLatestSongsCell.h */,
+				84DD831119944A0B00E1E4D6 /* MTLatestSongsCell.m */,
+				84DD831219944A0B00E1E4D6 /* MTLatestSongsCell.xib */,
+				84DD833219959B9700E1E4D6 /* MTLatestNewsCell.h */,
+				84DD833319959B9700E1E4D6 /* MTLatestNewsCell.m */,
+				84DD833419959B9700E1E4D6 /* MTLatestNewsCell.xib */,
+				84DD83271994B93E00E1E4D6 /* MTArtistsIntroCell.h */,
+				84DD83281994B93E00E1E4D6 /* MTArtistsIntroCell.m */,
+				84DD83291994B93E00E1E4D6 /* MTArtistsIntroCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -198,8 +309,10 @@
 			children = (
 				84CBD60E199117F000A23749 /* MTArtist.h */,
 				84CBD60F199117F000A23749 /* MTArtist.m */,
-				84CBD60B199114C200A23749 /* MTSong.h */,
-				84CBD60C199114C200A23749 /* MTSong.m */,
+				84CBD62E1993275000A23749 /* MTWork.h */,
+				84CBD62F1993275000A23749 /* MTWork.m */,
+				84CBD63119935E8F00A23749 /* MTSong.h */,
+				84CBD63219935E8F00A23749 /* MTSong.m */,
 				84CBD6041990FCA000A23749 /* MTDataHandler.h */,
 				84CBD6051990FCA000A23749 /* MTDataHandler.m */,
 				84CBD608199105C500A23749 /* MTImageHandler.h */,
@@ -288,9 +401,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DD83041993818F00E1E4D6 /* MTArtistSongTableViewCell.xib in Resources */,
+				84DD832B1994B93E00E1E4D6 /* MTArtistsIntroCell.xib in Resources */,
+				84CBD62D19930B1500A23749 /* MTArtistWorkTableViewCell.xib in Resources */,
 				84CBD5DF1990B08400A23749 /* Images.xcassets in Resources */,
 				84CBD61A1991E48F00A23749 /* Localizable.strings in Resources */,
 				84CBD5D11990B08400A23749 /* InfoPlist.strings in Resources */,
+				84DD833619959B9700E1E4D6 /* MTLatestNewsCell.xib in Resources */,
+				84DD830F1994444A00E1E4D6 /* MTLatestWorksCell.xib in Resources */,
+				84DD831419944A0B00E1E4D6 /* MTLatestSongsCell.xib in Resources */,
 				84CBD5DA1990B08400A23749 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,14 +462,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CBD60D199114C200A23749 /* MTSong.m in Sources */,
+				84DD83071993A89A00E1E4D6 /* MTSongPlayViewController.m in Sources */,
+				84DD83231994B84B00E1E4D6 /* MTArtistsIntroVC.m in Sources */,
+				84DD833F1995CBBE00E1E4D6 /* MTTopListVC.m in Sources */,
+				84CBD6301993275000A23749 /* MTWork.m in Sources */,
+				84DD832A1994B93E00E1E4D6 /* MTArtistsIntroCell.m in Sources */,
+				84DD830E1994444A00E1E4D6 /* MTLatestWorksCell.m in Sources */,
 				84CBD5D31990B08400A23749 /* main.m in Sources */,
 				84CBD5D71990B08400A23749 /* MTAppDelegate.m in Sources */,
+				84CBD63319935E8F00A23749 /* MTSong.m in Sources */,
+				84DD833519959B9700E1E4D6 /* MTLatestNewsCell.m in Sources */,
 				84CBD6131991CADD00A23749 /* MTLoginViewController.m in Sources */,
 				84CBD5FD1990C83400A23749 /* MTLeftViewController.m in Sources */,
+				84DD83031993818F00E1E4D6 /* MTArtistSongTableViewCell.m in Sources */,
+				84DD831D1994979B00E1E4D6 /* MTCustomSegue.m in Sources */,
+				84CBD62C19930B1500A23749 /* MTArtistWorkTableViewCell.m in Sources */,
 				84CBD60A199105C500A23749 /* MTImageHandler.m in Sources */,
 				84CBD610199117F000A23749 /* MTArtist.m in Sources */,
+				84DD83391995AE0500E1E4D6 /* MTNewsDetailVC.m in Sources */,
+				84CBD625199246B900A23749 /* MTArtistHomeViewController.m in Sources */,
+				84DD830A199441CF00E1E4D6 /* MTLatestWorksVC.m in Sources */,
+				84DD83311995999400E1E4D6 /* MTLatestNewsVC.m in Sources */,
+				84DD831319944A0B00E1E4D6 /* MTLatestSongsCell.m in Sources */,
+				84DD831A1994804500E1E4D6 /* MTLatestSongsVC.m in Sources */,
+				84CBD628199249B200A23749 /* ASScroll.m in Sources */,
 				84CBD6061990FCA000A23749 /* MTDataHandler.m in Sources */,
+				84DD832E1994EE2500E1E4D6 /* MTWorkShowVC.m in Sources */,
+				84DD833C1995CA8400E1E4D6 /* KxMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

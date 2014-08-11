@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking/AFHTTPRequestOperation.h>
 #import "UIViewController+MMDrawerController.h"
 #import "MTImageHandler.h"
+#import "MTLoginViewController.h"
+#import "MTArtistHomeViewController.h"
+#import "MTLatestSongsVC.h"
+#import "MTLatestWorksVC.h"
 
-@interface MTLeftViewController : UITableViewController
+@interface MTLeftViewController : UITableViewController <MTArtistImageDelegate>
+
+- (IBAction)loginButtonTapped:(UIButton *)sender;
+- (void)openLoginVC;
 
 @end

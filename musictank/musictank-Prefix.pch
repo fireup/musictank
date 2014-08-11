@@ -15,3 +15,17 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define LOGINURL @"http://182.92.76.111/apic/login"
+#define LOGOUTURL @"http://182.92.76.111/apic/logout"
+#define PROFILEURL @"http://182.92.76.111/apic/profile"
+#define LATESTWORKSURL @"http://182.92.76.111/apic/latest_works"
+#define LATESTSONGSURL @"http://182.92.76.111/apic/latest_songs"
+#define LATESTNEWSURL @"http://182.92.76.111/apic/latest_news"
+#define NEWSDETAILURL @"http://182.92.76.111/api/news_detail"
+#define ARTISTSINTROURL @"http://182.92.76.111/api/load_artists"
+#define TOPSONGSURL @"http://182.92.76.111/api/top_songs"
+#define TOPWORKSURL @"http://182.92.76.111/api/top_works"
+#define POPULARMALEURL @"http://182.92.76.111/api/popular_male_singers"
+#define POPULARFEMALEURL @"http://182.92.76.111/api/popular_songstress"
+
